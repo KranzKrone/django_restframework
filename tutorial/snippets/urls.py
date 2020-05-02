@@ -10,4 +10,5 @@ router.register('users', views.UserViewSet)
 # The API URLs are now determined automatically by the router.
 urlpatterns = [
     path('', include(router.urls)),
+    path('hello/', views.HelloView.as_view(), name='hello'),
 ]
